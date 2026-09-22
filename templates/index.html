@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sentinel — Network Security Scanner</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-grid"></div>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="brand">
+            <div class="brand-icon">
+                <span></span>
+            </div>
+
+            <div>
+                <div class="brand-name">SENTINEL</div>
+                <div class="brand-subtitle">NETWORK SECURITY</div>
+            </div>
+        </div>
+
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+    <main class="main-container">
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                DEFENSIVE SECURITY PLATFORM
+            </div>
+
+            <h1>
+                Discover your
+                <span>network.</span>
+            </h1>
+
+            <p class="hero-description">
+                Analyze hosts, discover open ports and identify running services
+                with a modern network security scanner.
+            </p>
+
+
+            <!-- Scan Card -->
+            <div class="scan-card">
+
+                <div class="scan-card-header">
+                    <div>
+                        <span class="small-label">TARGET ANALYSIS</span>
+                        <h2>Start a security scan</h2>
+                    </div>
+
+                    <div class="scanner-icon">
+                        ◉
+                    </div>
+                </div>
+
+
+                <div class="target-input-wrapper">
+
+                    <div class="input-icon">
+                        ⌁
+                    </div>
+
+                    <input
+                        type="text"
+                        id="targetInput"
+                        placeholder="Enter IP address — e.g. 127.0.0.1"
+                        autocomplete="off"
+                    >
+
+                    <button id="scanButton">
+                        <span>SCAN TARGET</span>
+                        <span class="button-arrow">→</span>
+                    </button>
+
+                </div>
+
+
+                <div class="authorization-note">
+                    <span>✓</span>
+                    Only scan systems you own or are authorized to test.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Scanner Visualization -->
+        <section class="scanner-section">
+
+            <div class="radar-container">
+
+                <div class="radar">
+
+                    <div class="radar-circle circle-one"></div>
+                    <div class="radar-circle circle-two"></div>
+                    <div class="radar-circle circle-three"></div>
+
+                    <div class="radar-cross horizontal"></div>
+                    <div class="radar-cross vertical"></div>
+
+                    <div class="radar-sweep"></div>
+
+                    <div class="radar-center">
+                        <div class="radar-center-dot"></div>
+                    </div>
+
+                </div>
+
+                <div class="radar-label">
+                    READY TO SCAN
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Feature Cards -->
+        <section class="features">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">◉</div>
+
+                <div>
+                    <h3>Host Discovery</h3>
+                    <p>
+                        Determine whether the target system is reachable.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">⌁</div>
+
+                <div>
+                    <h3>Port Analysis</h3>
+                    <p>
+                        Discover open TCP ports on the target system.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">◇</div>
+
+                <div>
+                    <h3>Service Detection</h3>
+                    <p>
+                        Identify services running behind detected ports.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div>
+                SENTINEL
+                <span>·</span>
+                LOCAL NETWORK SECURITY SCANNER
+            </div>
+
+            <div>
+                PYTHON · NMAP · FLASK
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+</html>
